@@ -1,0 +1,9 @@
+h2[class*="kırmızı"]
+{
+	color:red;
+}
+
+h2[class*="italik"]
+{
+	font-style: italic;
+}

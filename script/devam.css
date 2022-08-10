@@ -1,0 +1,65 @@
+/*CSS*/
+
+.cerceve
+{
+	border-style:solid;
+	border-color:red;
+	width:400px;
+	height:150px;
+	border-width:7px;
+}
+#iki
+{
+	position:fixed;
+	left: 5px;
+	bottom:5px;
+	background-color: green;
+}
+#icteki
+{
+	position:absolute;
+	top:50px;
+	left:20px;
+	width:100px;
+	height: 50px;
+	background-color:cyan;
+}
+
+#asagiüst
+{
+	position:fixed;
+	top:100px;
+	right:15px;
+	background-color:yellow;
+	z-index:2;
+}
+
+#yukarialt
+{
+	position:fixed;
+	top:15px;
+	right:50px;
+	z-index:1;
+	background-color:blue;
+}
+#uzunhikaye
+{
+	overflow:auto;
+}
+#bir
+{
+	overflow:scroll;
+}
+#yuvarla
+{
+	background-color:#F1AB43;
+	margin: 0px auto 50px auto;
+	border-top-left-radius:10px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:40px;
+	/*border-radius: 10px 20px 30px 40px*/
+	text-align: center;
+	vertical-align:center;
+	box-shadow:40 px 20px 30px gray inset;
+}

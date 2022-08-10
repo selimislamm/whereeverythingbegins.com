@@ -1,0 +1,69 @@
+/*style dosyası web sayfasındaki elemanların konumlarını belirler:*/
+
+body
+{
+	margin:0;
+	padding:0;
+}
+
+#container
+{
+	max-width: 900px;
+	margin: auto;
+	border-color:black;
+	border-style:solid;
+	min-height:500px;
+	background-color:green;
+}
+
+h2:first-child{
+	text-align:center;
+	margin:0;}
+
+header
+{
+	max-width:900px;
+	height: 70px;
+	background-color:cyan;
+	border-color:gray;
+	border-style:dashed;
+}
+
+nav
+{
+	max-width:900px;
+	height:50px;
+	border-color:gray;
+	border-style:dashed;
+	background-color: pink;
+}
+
+aside
+{
+	float:left;
+	width:150px;
+	min-height:280px;
+	border-color:grey;
+	border-style:dashed;
+	background-color:cyan;
+}
+
+section
+{
+	float:left;
+	width:738px;
+	min-height:280px;
+	border-color:gray;
+	border-style:dashed;
+	background-color:white;
+}
+
+footer
+{
+	float:left;
+	min-height:76px;
+	min-width:894px;
+	border-color:gray;
+	border-style:dashed;
+	background-color:pink;
+}

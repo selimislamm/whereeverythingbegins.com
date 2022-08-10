@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- [if IE lt 9]>
+		<script src="html5shiv.js"></script>
+		<![endif]-->
+		<link rel="icon" type="image/png" href="resimler/m.png">
+		<link rel="stylesheet" type="text/css" href="script/metin biçimlendirme.css">
+		<title>metin biçimlendirme</title>
+		<style type="text/css">
+			#alexander > article  
+			{
+				background: #58ffdb url("resimler/alexander.jpg") no-repeat center center ;
+				/*no-repeat yerine x-repeat y repeat yazılabilirdi x diyagonalde veya y diyagonalde tekrar etmesi sağlanırdı.*/
+				/*bu kodun en sonuna center center eklenirse görüntü tam ortalanır ilk center x ikincisi y yi temsil etmektedir bakground-position komutuna gerek kalmaz*/
+				background-size: 230px; 
+				background-position: center 40px ;
+				background-attachment: fixed; /*fixed opsiyonunda ise resim sitenin tam ortada sabit kalır sadece articlelın arkadında görünebilir durumdadır. */
+			}
+			#mozilla > article 
+			{
+				background: #db58ff url("resimler/firefox.png") no-repeat center center;
+				background position: center center;
+				background-size: 220px;
+				background-attachment: fixed;
+			}
+			#ie > article 
+			{
+				background: #ffdb58 url("resimler/ie.png") no-repeat center center;
+				background-size: 220px;
+				background-position: center center;
+				background-attachment: fixed;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<span id="sayfabasi"></span>
+		<div id="icerik">
+			<div id="alexander">
+				<article tabindex="3">
+				<h2 id="baslik" tabindex="1">  III. Aleksandros kimdir?</h2>
+				<p tabindex="2"><dfn>Büyük İskender, Antik Makedonya Krallığı'nın MÖ 336 - 323 
+				yılları arasındaki kralıdır.</dfn> MÖ 356 yılında Pella'da doğdu ve
+				20 yaşında babası II. Filip'in yerine tahta geçti. İktidarının 
+				uzun yıllarını Güneybatı Asya ve Kuzeydoğu Afrika'da eşi benzeri
+				görülmemiş büyük askerî seferlerle geçirdi ve 30 yaşına geldiğinde
+				Yunanistan'dan Kuzeybatı Hindistan'a kadar uzanan antik dünyanın
+				en büyük imparatorluklarından birini oluşturdu</p>
+				</article>
+				<a href="https://tr.wikipedia.org/wiki/%C4%B0skender" tabindex="4">bu konuda daha fazla bilgi edinmek için tıklayın</a></br>
+				<a href="https://eksisozluk.com/alexander--74995" tabindex="5">ekşi sözlük için tıklayınız</a></br>
+				<a href="#sayfabasi" tabindex="6">sayfa başına sönmek için tıklayınız</a></br>
+				<a href="baslik"tabindex="7">bokum bokum işler harbi</a>
+				
+			</div>
+			<div id="mozilla">
+				<article tabindex="8">
+					<h2 tabindex="9">Mozilla Firefox</h2>
+					<p tabindex="10"><dfn>Mozilla Firefox  Mozilla Vakfı ve onun alt kuruluşu Mozilla Corporation 
+					tarafından geliştirilen, özgür ve açık kaynak kodlu bir web tarayıcısıdır.</dfn>
+					Firefox; Windows, macOS, Linux, Android ve iOS işletim sistemlerinde 
+					kullanabilir. Yazılımın Windows, macOS, Linux, Android sürümlerinde
+					web sayfalarının oluşturulması için Gecko motoru kullanılır.
+					Mozilla tarafından geliştirilen Gecko, mevcut ve planlanmış
+					web standartlarıyla uyumludur. 2015'te çıkan iOS için
+					Firefox uygulamasında ise Apple'ın getirdiği kısıtlamalar 
+					nedeniyle iOS'in bütünleşik WebKit motoru kullanılır.
+				</article>
+				<a href="https://tr.wikipedia.org/wiki/Mozilla_Firefox"tabindex="11">bu konuda daha fazla bilgi edinmek için tıklayın</a></br>
+				<a href="https://eksisozluk.com/firefox--93598"tabindex="12">ekşi sözlük için tıklayınız</a></br>
+				<a href="#sayfabasi">sayfa başına sönmek için tıklayınız</a></br>
+				<a href="baslik">bokum bokum işler harbi</a>
+			</div>
+			<div id="ie"tabindex="13">
+				<article tabindex="14">
+					<h2 tabindex="15">Internet Explorer</h2>
+					<p tabindex="16"><dfn>Windows Internet Explorerya da eski adıyla Microsoft
+					Internet Explorer, Microsoft tarafından geliştirilen
+					bir web tarayıcısıdır.</dfn> Microsoft Windows, Mac OS ve
+					Unix sürümleri vardır, öte yandan 15 Haziran 2022 
+					tarihinden itibaren tarayıcı desteklenmediği için artık
+					bütün sürümleri geliştirilmemektedir. Eski bilgisayarlarda 
+					Microsoft Windows ile birlikte öntanımlı olarak gelen 
+					Internet Explorer'ın Windows'a bütünleşik gelmesinden dolayı 
+					tarayıcı piyasasının büyük bir bölümünü elinde 
+					bulundurmaktaydı. Windows Vista ile birlikte adı Windows
+					Internet Explorer olarak değiştirildi. O dönem Microsoft 
+					tarafından yalnızca güvenlik yaması yayınlandı. 12 Ocak 
+					2016'dan itibaren Internet Explorer 11 sadece tüketicilere 
+					resmi destek vermiştir. 16 Nisan 2019 tarihinde Internet
+					Explorer'ın gözden geçirilmiş son güncellenmiş hali Windows 
+					Server 2012 ve Windows Embedded 8 Standard için yayınlandı.
+					Microsoft 20 Mayıs 2021'de, 15 Haziran 2022'de Internet Explorer
+					için tam desteğin kesileceği ardından alternatifin eski siteler 
+					için IE modlu Microsoft Edge olacağı açıklandı. Açıklandığı
+					şekilde Internet Explorer'ın desteği 15 Haziran 2022 tarihinde 
+					Microsoft tarafından kesildi.<p>
+				</article>
+				<a href="https://tr.wikipedia.org/wiki/Internet_Explorer"tabindex="17">bu konuda daha fazla bilgi edinmek için tıklayın</a></br>
+				<a href="http://www.yandex.com.tr/clck/jsredir?from=www.yandex.com.tr%3Bsearch%2F%3Bweb%3B%3B&text=&etext=2202.VLoV1tskcXNZbRciVA2kC3N6dG1saW9rYmh6c3FkYWY.2b388f75ab1f7b55ed7136c1c63f0d6985104f40&uuid=&state=jLT9ScZ_wbo,&&cst=AiuY0DBWFJ5Hyx_fyvalFBlPOk_YM-b2hAunuf2KJL5J5GjvSI5y1PMahalcUr6rTPvO6c_soYtCBp0SlqflFl3S8VbNkzMeJBmUW0Wb6akeIffzC33r1Y4BS0IjFfribaBjwmdeSKl-afEoMbyafPgpMeebIUktehW6A1Pe36i6tma7p-zDCraxkAM88CFA6BDPVWoudXhQ9pK1Mltdrvx_qylb69JIJyJQuaBl8i1HbBaJ37RTaYOrkX5MhMs3d6LtFvmVGGZOoFFDgpyO9YuV-cdZ8cUltBlkC6zfc3anVn4e4oJhzc_hWUvMRe3-cxpRMH3LYTiSn8ljXfg28fR_co4z6QGgR5pkcI_DDSbeIS2te9PCjpI5AKFrLKjjldRPcux7CGW1Ztd-msgeV35ejTn8fCMyPh8y-y3TqCCbEZcuM8EIzpDSMxL2a1Nm_o3vZtl0XdWOEMnRqJ4EP9n40t_Cw1CTxdBAcGbIZZMqtpnwlgy0j8MZVJCONVH3gXB7IOHbnPI,&data=UlNrNmk5WktYejY4cHFySjRXSWhXSnRUQThZQThNVnE5LXp2OVFwUnVrdG03R21QMlN6TUt2UlZ5b1hNVmdaSTFHQnRtcERIbDZKOVdRQS1OYTdFNmxGS1pjT3FxREFuVlRFY1p4d2dVdHpPUEwwekowek9obktXOGsya3FvdEQ5ckRMOGVZYVpVOCw,&sign=1f2694ef23fe6c67502c9e30a7fa1b74&keyno=0&b64e=2&ref=orjY4mGPRjlSKyJlbRuxUvsT0GjzAcksDAAmi70NfXOjhm3XdiJNgbOYp-nHMKApwJScqnFVq5tcxaxYCffHRQ,,&l10n=tr&cts=1659874202487%40%40events%3D%5B%7B%22event%22%3A%22click%22%2C%22id%22%3A%22h2hew01-00%22%2C%22cts%22%3A1659874202487%2C%22fast%22%3A%7B%22organic%22%3A1%7D%2C%22service%22%3A%22web%22%2C%22event-id%22%3A%22l6ja8rjrxc%22%7D%5D&mc=3.8521687236032816&hdtime=297107.1">ekşi sözlük için tıklayınız</a></br>
+				<a href="#sayfabasi">sayfa başına sönmek için tıklayınız</a></br>
+				<a href="baslik">bokum bokum işler harbi</a>
+			</div>
+		</div>
+		
+	</body>
+</html>

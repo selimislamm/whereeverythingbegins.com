@@ -1,0 +1,100 @@
+/* noluyor yaw*/
+/*resim eklemeyi css kodlarının içerisinde çalıştıramadım o yüzden html kodlarının içinde duruyor*/
+
+body{
+	font-family:verdana;
+	color:rgb(40,40,250);
+	font-size:15px;}
+#icerik
+{
+	max-width:2000px;
+	margin: auto auto; /*%left, right, justify(satırı doldurrmak için)%yazıların ortalanmasını sağlıyor*/
+	
+}
+
+p{
+	text-indent:50px; /*paragrafın ilk satırında belirtilen miktarda girinti oluşturur.*/ 
+	letter-spacing:1.5px;
+	word-spacing:3px;
+	line-height:18px; /* satırın boyunu ayarlar (eğer düşük bir değer girerseniz satırlar iç içe gözüküyor)*/
+	width:750px;
+	/*bu iki satır metnin bununduğu çerçevenin uzunluğunu ve genişliğini ayarlıyor eğer paragrafların arkasına bir renk ekleyecek olsaydık bu tüm divi kpalamzdı sadece bu belirtline çerçeve boyanırdı*/
+	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*bu satırdaki kodlar paragrafın etrafında bir miktar boşluk bırakıyorlar */ 
+	margin:auto auto;/*metni bulunduğu kutunun ortasına sabitliyor ki bu sadece genişliği belli olan bir paragrafta mümküün*/
+	text-align:justify;}
+
+h2{
+	color:rgb(20,20,125);
+	font-size:20px;
+	font-family:arial;
+	text-transform:uppercase; /*lowercase, capitalize, none*/
+	padding-top:10px;
+	text-decoration:underline;
+	text-align: center;}
+
+article{
+	max-height:1000px;
+}
+
+
+article > p > dfn{
+	font-family: arial;
+	font-weight: bold; /* lighter, normal, bolder*/
+	font-size: 15px; 
+	color:rgb(30,30,180);
+	font-variant:small-caps;}/*harflerin normal boyutta byük harflerle gösterilmesini sağlar*/
+
+
+
+
+a{
+	display:block; /*bu kod sayesinde normalde inline olarak davranış sergileyen a komutu tüm block gibi davranır. yani tüm satırı kaplar. 
+	inline komutlar sadece kapladıkları yerden ibarettirler
+	burda bu komutun kullanılmasının sebebi yazıyı ortamak istememiz p komutlarının text-align komutuyka ortalayabiliyoruz fakat bu komut 
+	sadece bulunduğu yerden ibaret olduğu için ortalasak bile yine yerinde kalıyordu
+	bu komutla birlikte bir nevi link komutlarınının genişliğini diğer komutlarla eşitledik ve yazının ortalanmasını sağladık.*/
+	font-family:arial;
+	line-height:18px;
+	letter-spacing:1,5px;
+	word-spacing:3px;
+	margin: center center;
+	text-align: center;
+	margin:2px;
+	text-decoration:none;}
+
+
+a:link
+{
+	color:rgb(100,150,75);
+	
+}
+
+a:link:hover
+{
+	color:rgb(45,178,100);
+	
+}
+
+a:visited
+{
+	/* text-decoration:line-through; %none, underline, overline% satırın üstünü çizmesi gerekiyor ama burda kullanınca olmadı direkt a tagının içine yaazınca çalışıyor*/
+	color:rgb(30,100,150);
+	
+}
+
+a:visited:hover
+{
+	color:rgb(50,75,125);
+}
+
+a:visited:active
+{
+	color:darkred;
+}
+
+
+

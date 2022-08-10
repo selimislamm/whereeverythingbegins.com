@@ -1,0 +1,97 @@
+/*CSS KODLARI*/
+article p:nth-child(1):first-letter
+{
+	font-size:50px;
+}
+
+.saricizgili
+{
+	border-style: outset;
+	border-color:blue;
+	border-width:5px;
+	background:red;
+}
+
+.cerceve
+{
+	border-style: groove;
+	border-top-color: orange;
+	border-bottom-color: blue;
+	border-left-color: brown;
+	border-right-color: purple;
+	border-width: 15px;
+}
+
+footer h3
+{
+	font-variant:small-caps;
+}
+
+body
+{
+	font-size:15px; 
+	font-family: verdana;
+	letter-spacing:0.15em;
+	word-spacing:0.25em;
+}
+
+ul li
+{
+	color:red
+}
+
+a:link
+{
+	font-family:courier;
+	font-size:15px;
+	color:#3BF143;
+}
+
+a:link:hover
+{
+	font-family:courier;
+	font-size:15px;
+	color:#3BF143;
+}
+
+a:visited
+{
+	font-family:courier;
+	font-size:15px;
+	color:#FFB900;
+}
+
+a:visited:hover
+{
+	font-family:courier;
+	font-size:15px;
+	color:rgb(200,175,75);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color:darkblue;
+}
+
+p
+{
+	text-indent:50px;
+	color:royalblue;
+	text-align: justify;
+	line-height:30px;
+	border-style: inset;
+	border-width: 10px;
+	border-color: green;
+}
+
+h3
+{
+	font-size:30px;
+	letter-spacing:0.004em;
+	font-variant:small-caps;
+}
+
+#daali
+{
+	width:400px;
+}

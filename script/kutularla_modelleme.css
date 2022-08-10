@@ -1,0 +1,123 @@
+/*kutu modeli*/
+
+p
+{
+	color:green;
+	text-indent:50px;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+img
+{
+	float: right;
+}
+
+#container
+{
+	min-height:1000px;
+	min-width:1000px;
+}
+
+article > p:nth-child(2)
+{
+	width:450px;
+	max-height:200px;
+	margin: 10px auto 10px auto;
+	overflow:auto; /*bu kod satırı gösterimdeki verilerin içeriği 
+	doldurup taşması durumunda yan tarafında kaydırma çubu gözükmesini 
+	sağlar. bu sayede fazla yer kullanılmadan daha fazla veri kullanıcıya sunulabilir*/ 
+	border-style:groove;
+	/*border-left-style gibi komutlarla her kenarlığa farklı bir stil verebilirsiniz veya üst sağ alt sol stilleri sırasıyla yazabilirsiniz aşaıda da örneği var*/
+	border-width:4px; 
+	/*çerçevenin kalınlığını belirler border-top-width border-left-width gibi komutlarla her kenarlığa özel bir genişlik verebilirizP.S.: çok kalın olduğunda hoş durmuyolar.*/
+	padding:10px 40px 80px 120px; 
+	/*sırasıyla üstte sağda solda altta ve soldaki padding boşluklarını belirtir onun yerine padding-left gibi komutlarla teker tekerde belirtme yapılabilir*/
+	margin: 10px auto 50 px; 
+	/*bu kod ile belirtilen paragrafın diğer ögeler ile arasında 50 pixel boşluk bırakılması ve yine bu paragrafın bulunduğu bölümü yatay doğrultuda ortamalası sağlanır.
+	margin komutu padding komutu ile çok benzerdir tek farkı içerik ile kenarlıklar arası değil kenarlıkla ile diğer ögeler arasındaki bnoşluğu ayarlmasıdır.
+	margin komutununn kullanım şeması da aşağıdaki gibir. 
+	margin: üst sağ alt sol*/
+	box-shadow: 5px 5px 3px grey inset;
+}
+
+body> div > p:nth-child(3)
+{
+	color: blue;
+	width:300px;
+	
+	
+}
+
+body > div > p:nth-child(4)
+{
+	width:500px;
+	min-height:60px;
+	border-style:ridge;
+	border-width:10px;
+	padding: 10px 10px 10px 10px;
+	border-color: blue;
+	position:fixed;
+	background: #aa34ff;
+	bottom: 0px; /*alltaki mesafe*/
+	right: 0px;  /*sağdaki mesafe*/
+	border-radius: 10px 20px 30px 40px;
+}
+
+	
+body > div > p:nth-child(5) {
+	padding:10px 10px 10px 10px;
+	width:400px;
+	border-style:dashed inset outset double;
+	border-width: 10px;
+	box-shadow: 20px 40px 10px  blue;/*kutuya gölge ekler
+	box-shadow: h-shadow v-shadow blur(ne kadarlık lısmı yumuşatılacak) color inset(gölgenin içeride göükmesini sağlar)*/
+	}
+
+article > blockquote:nth-child(3){
+	max-width:350px;
+	min-width: 200px;
+	min-height: 200px;
+	border-style:dotted;
+	/*border sylelarından farklı bşiler kullanmak işterseniz dashed, double, groove, ridge, inset, outset gibi opsiyonlar bulunmaktadır*/
+	border-width:5px;  
+	/*aşağıdaki 3 satır kenarlık genişlikleri ile html elemanın fazladan yer kaplamasını engellemektedir.
+	bu kodların olmadığı senaryoda normal genişliği 500 olan bir elemanın 10 pxlik padding boşlukları ve 5 pxlik kenarlıkların kalınlığı ile toplam kapladığı aman 530px olur
+	kullanılan bu fazladan alan bazı durumlarda sıkıntı yaratmaktadır bu  gibi problemlerin oluşumunu aşağıdaki kodlar engeller. */
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	
+	border-top-color:orange;
+	padding: 10px 10px 10px 10px;/*içerik ve kenarlıklar arasındakki mesafeyi belirler [üst sağ alt sol]*/ 
+	z-index:1;
+	background-color: lightblue;
+	}
+	
+
+article > blockquote:nth-child(4){
+	/*bu css kodları bir yukarıdaki kodlarla aynı fakat buranın tek farkı position komutununda relative başlığının incelenmiş olması
+	relative komutuyla html ögesi normalde bulunması gereken yere (static) göre konumlarndırılı bu örnekte soldan 50 pixel üstten 50 pixel oynatılmış.
+	oynatılan blockquote tagından sonra bu iki tag üstüste gelmektedir angi tagın yukarda gözükmesini istiyorsak bu komutun z indexini büyük yapmalıyız
+	mesela bu örnekte üstteki tagın yukarda gözükmesini istediğimizden bu kodun z indexi -1 diğerinin z indexini 1 olarak belirleyeceğiz.*/
+	/* başka kutuların içindeki kutuları içinde bulundukları kutulara göre yerleştimek istediğinizde position:absolute kodunu kullanmanız gerekmektedir.*/	
+	position: relative;
+	left: 50px;
+	top: -50px;
+	z-index:-1;
+	
+	
+	max-width:350px;
+	min-width: 200px;
+	min-height: 200px;
+	border-style:dotted;
+	border-width:5px;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	border-top-color:orange;
+	padding: 10px 10px 10px 10px;
+	background-color: yellow;
+	}
+	
+

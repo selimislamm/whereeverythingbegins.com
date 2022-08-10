@@ -1,0 +1,15 @@
+/*tablo ve menü oluşturma*/
+th, td
+{padding:5px 30px;
+text-align: center;
+vertical-align: center;
+border-width: 3px;
+/*border-collapse: collapse komutuyla 2 çizgi şeklinde gözüken tablo kenarını teke inidirebilirsiniz.*/
+}
+
+th{
+	color:white;
+	background-color:grey;
+	
+}
+
